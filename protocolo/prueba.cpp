@@ -1,0 +1,163 @@
+#include "src/lib.cpp"
+using namespace std;
+using namespace NTL;
+using namespace cv;
+
+int main(int argc, char const *argv[]){
+	files f;
+	protocolo me, other;
+	me.h = NULL;
+    me.c = NULL;
+    me.rsa = NULL;
+    me.g = NULL;
+
+    other.h = NULL;
+    other.c = NULL;
+    other.rsa = NULL;
+    other.g = NULL;
+
+	ZZ p, g, A, B, e,N, e1, e2;
+	vector<ZZ> data, u;
+	vector<string> o;
+	string msn;	
+	/*bool st = true;
+	int opt;
+	cout << "1 - Yo quiero Enviar un mensaje encriptado"<<endl;
+	cout << "2 - Yo recibo el mensaje encriptado para desencriptar"<<endl;
+	cout << "3 - Salir"<<endl;
+	
+	while(st){
+		cout << "Opcion: ";
+		cin >> opt;
+		switch(opt){
+			case 1:*/
+			cout << "Tomarse una foto:" << endl;
+			me.takePhoto();
+			data = me.getSeed();
+			cout << "Usando Deffie - Hellman para hallar la clave K" << endl;
+				other.h = new hellman(20, data[0]);
+				u = other.h->getPublic();
+				p = u[0];
+				g = u[1];
+				A = u[2];
+				
+				me.h = new hellman(20, data[1], p, g, A);
+				other.h->setB( me.h->getB() );
+				me.setK( me.h->getK() );
+				
+				/*estatico*/
+				me.K = conv<ZZ>("20");
+				/*estatico*/
+			cout << "Aplicando Cesar" << endl;
+				msn = me._ccesar();
+				cout << "encriptado cesar: "<<msn << endl;
+
+			cout << "Firma RSA" << endl;
+				other.rsa = new RSA(data[1]);
+				/*estatico*/
+				other.rsa->e = conv<ZZ>("135957043663892642643920682045107083982219457495337259874483623686735416473634157434898250981077453644645611125363888662750946978240092973828157842640883320599336989594461638348001680495953014164234563280499451419471072335388237944458584341560435452802914871388359388442703790075384051435149239352920890076167");
+				other.rsa->d = conv<ZZ>("21789340966119291045314432534641202532740266679494864642379742093962117612319809219669273931607607861214081241256227427914086001225379063468332819468308212356077751884076761302314054656055360312570221352841005147503592134286229246963725459094556457331421004526308877633477209952149191344052218685160204715105191355183170454795905747626279346636011395174946384032654167498490215416634286862397602414656424535591397605573888224962313399362828588627807345215061836004345040558429385949651240843096176521766313185444868131902257530785588155477930469359255481573145685607784056994449421511113662704784792558507354925060519");
+				other.rsa->N = conv<ZZ>("23064945257292281727870978339468934825922468561893177588377650321255690350195208067466955625185006629763590496211713651839947130032069911035390515513973082829360541488534286899047787919981895536027493106058663141826265321575890316655519410552188910758981405732133455379422064526952626082517852182049524195378118440967128563456920250580707730892464377454506876576034962169619324118195349122945476969181614024480623086508459244181159254587208137962499274656454733972242297911580875021750217468245962574382071784183383565101930165596565611843030035142189452140462641597579988382551118268259060426206137653643644583749163");
+				/*estatico*/
+				u = other.rsa->getPublic();
+				e = u[0];
+				N = u[1];
+				
+				me.rsa = new RSA(data[2]);
+				/*estatico*/
+				me.rsa->e = conv<ZZ>("149335925529017363015976989165485991145384700831637537457721068011950602390545268895875120421870018879469100923916651337793526070357719258736966436266772648639377088494509289717355557832823635166689439266528512327787884657712119578863129514012481645950046287440243001482460522943305734915834854889483568708833");
+				me.rsa->d = conv<ZZ>("8178630286181361740517411717916885214616413013571930988792743176901428037526224832578037056940627003855130203055688564603029779560674935714930562043744070471987175898616974219129313519875658528210243705336746719765353819555890714700798817831726495427302913332263952405255790887067795810076501119826582355035028229621491532958678776344409023908943633342532790614332560287151184299766196970270150214339058269256531350865447344703882404978094362805112083056855655002918525615040272892820344038695409572477929150527283042827743869128080875386307507962438397231217927796870217805670395207234187982080136868946793220753297");
+				me.rsa->N = conv<ZZ>("17129956390574282060457853744670110053435817502389554626975510260772354407558956918830984158944245467571649871643438497987611322518578222418393174848274533465169406262001878907171682647063802519314158993570294493375907087396816894713025536523454357754845709452524404496845372046146745361885210825285543745155705632780853986163215327872284199929841449992857983260151641565315304609133530481245693051281623475435067840811010852956627003765859462716816113682414246760437049801695082481099156166306079439436383213815113963521062048066412432130469240497104997291163701101430028896086159896523404300972892046984921291598893");
+				/*estatico*/
+				me.rsa->setRSA(e, N);
+				msn = me.rsa->_c( me.getEC() );
+				cout << "encriptado: " << msn << endl;
+				me.setEC(msn);
+				
+			cout << "El gamal" << endl;
+				other.g = new gamal(20, data[1]);
+				/*estatico*/
+				other.g->p = conv<ZZ>("595319");
+				other.g->e1 = conv<ZZ>("297660");
+				other.g->e2 = conv<ZZ>("222401");
+				other.g->d = conv<ZZ>("22344");
+				/*estatico*/
+
+				u = other.g->getPublic();
+				e1 = u[0];
+				e2 = u[1];
+				p = u[2];
+				me.g = new gamal(20, data[0], e1, e2, p);
+
+				msn = f.readString("files/msn.txt");
+				msn = me.g->_c(msn);
+				msn += "#";
+				msn += me.g->_ci(me.getEC());
+				//cout << me.g->_ci(me.getEC()) << endl;
+				me.setEC(msn);
+				//cout << "encriptado: " << msn<<endl;
+
+				if(f.isFile("files/cifrado.txt")){
+					f.writeString("files/cifrado.txt", msn);
+					f.close();
+
+					cout << "Guardado en el archivo cifrado.txt " << endl;
+				}else{
+					cout << "El archivo cifrado.txt no existe" << endl;
+				}
+
+
+
+
+
+				cout << endl << endl << endl;
+				msn = f.readString("files/cifrado.txt");
+				//cout <<"encriptado: "<< msn << endl;
+				o = other.proc(msn);		
+				msn = other.g->_d(o[0]);
+				//cout << "mensaje: "<<msn << endl;
+				
+				if(f.isFile("files/decifrado.txt")){
+					f.writeString("files/decifrado.txt", msn);
+					f.close();
+					cout << "Guardado en el archivo decifrado.txt " << endl;
+				}else{
+					cout << "El archivo decifrado.txt no existe" << endl;
+				}		
+				cout << "Desenciptando imagen del gamal"<<endl;
+				//cout << o[1] << endl;
+				msn = other.g->_di(o[1]);
+				cout <<"desencriptado: "<< msn << endl;
+
+				u = me.rsa->getPublic();
+				e = u[0];
+				N = u[1];
+				cout << "Desenciptando imagen de la firma"<<endl;
+				other.rsa->setRSA(e, N);
+				msn = other.rsa->_d(msn);
+				cout << "desencriptar: "<<msn<<endl;
+				
+				cout << "Desenciptando imagen del cesar"<<endl;
+				other.setEC(msn);
+				other.setK(other.h->getK());
+				/*estatico*/
+				other.K = conv<ZZ>("20");
+				/*estatico*/
+				msn = other._dcesar(msn);	
+				cout << "desencriptar: "<<msn<<endl;			
+				other.setEC(msn);
+
+				cout << "Mostrando imagen"<<endl;
+				other.showPhoto();
+			/*break;	
+			case 2:
+
+			break;
+			default:
+				st = false;
+			break;
+		}
+	}*/
+
+		return 0;
+}

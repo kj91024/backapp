@@ -1,0 +1,770 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0057)http://www.monografias.com/trabajos11/merced/merced.shtml -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/quant.js" async="" type="text/javascript"></script><script src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/cb=gapi.loaded_1" async=""></script><script src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/cb=gapi.loaded_0" async=""></script><script async="" type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/v2"></script><script async="" type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/azxImUq6er4RU_acwqm_6l.js"></script><script type="text/javascript" async="" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/inpage_linkid.js" id="undefined"></script><script src="http://pagead2.googlesyndication.com/pagead/osd.js"></script><script async="" type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/ti.js"></script><script async="" type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/gpt.js"></script><script type="text/javascript" async="" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/ga.js"></script><script src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/quant.js" async="" type="text/javascript"></script><script async="" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/beacon.js"></script><script type="text/javascript" async="" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/init"></script><script type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/ws-13AC144A.js"></script>
+<title>
+
+La Proxima Generación de Arquitecturas de Microprocesadores: - Monografias.com</title>
+
+
+<meta name="description" content="
+
+
+Una Arquitectura de Set de Instrucciones de 64-bits (ISA) Basada en...">
+
+<meta name="author" content="
+
+19962723 , Monografias.com">
+
+<meta name="keywords" content="
+
+sistema,también,memoria,clientes,procesador,instrucciones,arquitectura,registros,procesadores,paralelo,arquitecturas,compilador,paralelismo,instruction,itanium">
+<meta property="og:image" content="//www.monografias.com/img/fb-logo.jpg">
+<!-- GOOGLE ANALYTICS ASYNC-->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+var pluginUrl = (('https:' == document.location.protocol) ?
+   'https://ssl.' : 'http://www.') +
+   'google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setAccount', 'UA-90932-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript';
+  ga.async = true;
+  ga.src = '//www.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- FIN GOOGLE ANALYTICS ASYNC-->
+<link href="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/mono_v2-min.css" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/jquery-ui.css" media="all">
+<script type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/jquery.min.js"></script>
+<script type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/jquery.colorbox.js"></script>
+<script type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/mono.indextank.trabajos-autocomplete.js"></script>
+<script type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/mono.base.js"></script>
+<script type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/mono.comentarios.js"></script>
+<!-- PUT THIS TAG IN THE head SECTION -->
+<script type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/google_service.js"></script>
+<script type="text/javascript">
+GS_googleAddAdSenseService("ca-pub-8402207393259754");
+GS_googleEnableAllServices();
+</script><script src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/google_ads.js"></script>
+<script type="text/javascript">
+GA_googleUseIframeRendering();
+</script>
+<!-- END OF TAG FOR head SECTION -->
+<!-- DFP -->
+<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<!-- DFP -->
+<!-- BEGIN Tynt Script -->
+<script type="text/javascript">
+if(document.location.protocol=='http:'){
+ var Tynt=Tynt||[];Tynt.push('azxImUq6er4RU_acwqm_6l');
+ (function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='//tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})();
+}
+</script>
+<!-- END Tynt Script -->
+
+<script type="text/javascript" defer="" async="" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/initcb"></script><script src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/pubads_impl_105.js" async=""></script><link rel="prefetch" href="http://tpc.googlesyndication.com/safeframe/1-0-5/html/container.html"><script type="text/javascript" charset="utf-8" async="" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/button.5546439b5d743401ca910708312f6e81.js"></script><script type="text/javascript" async="" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/ortc-2.1.24.js"></script><script type="text/javascript" async="" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/swfobject.js"></script><script type="text/javascript" async="" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/ws-4.4.42.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+<body class="interior monografia" style="margin-top:34px;">
+<div id="fb-root" class=" fb_reset"><script type="text/javascript" async="" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/plusone.js" gapi_processed="true"></script><script type="text/javascript" async="" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/widgets.js"></script><script type="text/javascript" async="" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/all.js"></script><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/fTmIQU3LxvB.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/fTmIQU3LxvB(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script type="text/javascript">
+ window.fbAsyncInit = function() {
+   FB.init({appId: '168580619833974', status: true, cookie: true, xfbml: true, channelUrl:'/channel.html'});
+ };
+ (function() {
+	var fbdiv = document.getElementById('fb-root');
+	var e = document.createElement('script');
+	e.type = 'text/javascript';
+	e.async = true;
+	e.src = '//connect.facebook.net/es_ES/all.js';
+	var twitterScriptTag = document.createElement('script');
+	twitterScriptTag.type = 'text/javascript';
+	twitterScriptTag.async = true;
+	twitterScriptTag.src = '//platform.twitter.com/widgets.js';
+	var plusoneScriptTag = document.createElement('script');
+	plusoneScriptTag.type = 'text/javascript';
+	plusoneScriptTag.async = true;
+	plusoneScriptTag.src = '//apis.google.com/js/plusone.js';
+	fbdiv.appendChild(plusoneScriptTag);
+	fbdiv.appendChild(twitterScriptTag);
+	fbdiv.appendChild(e);
+ }());
+</script>
+
+<!-- REDISEÑO HEADER - 06/2011 @Juanma -->
+<div id="barra_mono" style="top: 0px; z-index: 99999; position: fixed !important; box-shadow: rgb(85, 85, 85) 0px 0px 7px;">
+
+	<div id="container_mono">
+		<a class="logo_mono" href="http://www.monografias.com/">
+			<span class="sprites-2011-main logotipo2"></span>
+			<!-- img class="logo_mono" src="http://blogs.monografias.com/wp-content/themes/monografias2009/images/logo_monografias.gif" width="175" height="28"/ -->
+		</a>
+
+		<div id="utilidades2">
+					<span class="secundario">
+						<span class="sprites-2011 sprite-ico_addfav">
+							<a href="javascript:mono.util.agregarFavorito();">Agregar a favoritos</a>
+						</span>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="sprites-2011 sprite-ico_ayuda">
+							<a href="http://www.monografias.com/ayuda/ayuda.shtml">Ayuda</a>
+						</span>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="sprites-2011 sprite-ico_portugues2">
+							<a href="http://br.monografias.com/">Português</a>
+						</span>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span class="sprites-2011 sprite-ico_usa">
+                                                        <a href="http://us.monografias.com/">Ingles</a>
+                                                </span>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;
+					</span>
+		</div><!-- utilidades2 -->
+
+		<div id="Idioma"><span class="secundario"><span class="sprites-2011 sprite-log-user">&nbsp;<a href="http://www.monografias.com/usuario/registro">¡Regístrese!</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;<a id="js-login" href="http://www.monografias.com/usuario/login">Iniciar sesión</a></span></div><!-- Idioma -->
+
+	</div>
+</div>
+<div id="subheader" style="display:block; width:100%; z-index:99999;">
+	<div class="clear"></div>
+</div>
+                <div id="Publi728" class="Publi728-Height90px">
+                <div id="Publi728Int" class="Publi728-Height90px" ws-zone="9005.00">
+			<!-- Top-Content-728 -->
+			<script type="text/javascript">
+			GA_googleFillSlotWithSize("ca-pub-8402207393259754", "Top-Content-728", 728, 90);
+			isIE7=false;
+			</script><div id="google_ads_div_Top-Content-728"><ins style="position:relative;width:728px;height:90px;border:none;display:inline-table;"><ins style="position:relative;width:728px;height:90px;border:none;display:block;"><iframe id="google_ads_iframe_Top-Content-728" name="google_ads_iframe_Top-Content-728" width="728" height="90" vspace="0" hspace="0" allowtransparency="true" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; left: 0px; position: absolute; top: 0px; display: none !important;" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/ads.html"></iframe></ins></ins></div>
+	<script type="text/javascript">var ws_unit = { "id":"9005" };</script>
+	<script type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/ws-ad.js" loaded="1"></script>
+		</div>
+		</div><!-- Publi728 -->
+<!-- Setear "home" o "interior", segun se trate del index o de las interiores -->
+<div id="Wrap" class="r1024" style="width: 1300px;"> <!-- no tocar este class, el JS establece el ancho dinamicamente -->
+	<div id="Pagina" style="position: relative; margin: 0px auto; float: none;">
+<!-- Banda superior fija -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('body').attr('style', 'margin-top:34px;');
+        $('#subheader').attr('style', 'display:block; width:100%; z-index:99999;');
+        var $barra = $('#barra_mono');
+        $barra.attr('style', 'position:fixed!important; top:0; z-index:99999;');
+        $(window).scroll(function () {
+            if ($barra.offset().top !== 0) {
+                $barra.css('box-shadow', '0 0 7px #555555');
+            } else {
+                $barra.css('box-shadow', 'none');
+            }
+        });
+    });
+</script>
+
+<!-- /Banda superior fija -->
+
+<!-- Publicidades laterales -->
+
+<style type="text/css">
+    #publi-lateral-izq {
+		float: left;
+        margin-left: -170px;
+        width:160px; height:600px;
+    }
+    #publi-lateral-der {
+        position:absolute !important;
+        margin-left: 970px;
+        width:160px; height:600px;
+    }
+</style>
+
+<script>
+    var width = window.innerWidth;
+    if ( width >= 1130 ) {
+        document.write('<div id="publi-lateral-izq"><div id="publi-lateral-izq-cont">');
+        document.write('<scr' + 'ipt type="text/javascript">GA_googleFillSlotWithSize("ca-pub-8402207393259754", "160-Trabajos-pag1", 160, 600)</scr'+'ipt>');
+		document.write('<scr' + 'ipt type="text/javascript">var ws_unit = { "id":"9008" };</scr'+'ipt>');
+		document.write('<scr' + 'ipt type="text/javascript" src="//wfpscripts.webspectator.com/ws-ad.js"></scr'+'ipt>');
+        document.write('</div></div>');
+        document.getElementById("Wrap").style.width = '1300px';
+        document.getElementById("Pagina").style.position = "relative";
+        document.getElementById("Pagina").style.margin = "0 auto";
+        document.getElementById("Pagina").style.cssFloat = "none";
+        document.getElementById("Pagina").style.styleFloat = "none";
+    }
+</script><div id="publi-lateral-izq"><div id="publi-lateral-izq-cont" ws-zone="9008.00"><script type="text/javascript">GA_googleFillSlotWithSize("ca-pub-8402207393259754", "160-Trabajos-pag1", 160, 600)</script><div id="google_ads_div_160-Trabajos-pag1"><ins style="position:relative;width:160px;height:600px;border:none;display:inline-table;"><ins style="position:relative;width:160px;height:600px;border:none;display:block;"><iframe id="google_ads_iframe_160-Trabajos-pag1" name="google_ads_iframe_160-Trabajos-pag1" width="160" height="600" vspace="0" hspace="0" allowtransparency="true" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; left: 0px; position: absolute; top: 0px; display: none !important;" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/ads(1).html"></iframe></ins></ins></div><script type="text/javascript">var ws_unit = { "id":"9008" };</script><script type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/ws-ad.js" loaded="1"></script></div></div>
+
+<!-- /Publicidades laterales -->
+
+		<div id="navegacion2">
+		  <ul>
+			<li id="actual"><a href="http://www.monografias.com/">Monografías</a></li>
+			<li><a href="http://www.monografias.com/New">Nuevas</a></li>
+			<li><a href="http://www.monografias.com/participar.shtml">Publicar</a></li>
+			<li><a href="http://blogs.monografias.com/">Blogs</a></li>
+			<li><a href="http://foros.monografias.com/">Foros</a></li>
+			<!--<li><a class="nuevo" href="/Videos/index.shtml">Videos</a></li>-->
+		  </ul>
+
+
+
+      <!-- Buscador para ventana angosta, coordinar con el de abajo -->
+
+			<div id="Buscador800">
+
+  				<span class="secundario">
+						<a href="http://www.monografias.com/cgi-bin/search.cgi" class="secundario">Busqueda avanzada</a>
+					</span>
+
+				<form action="http://www.monografias.com/cgi-bin/search.cgi" name="a" id="a">
+					<input name="substring" value="0" type="hidden">
+					<input name="bool" value="and" type="hidden">
+	                                <input name="query" id="query" size="21" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+					<input name="buscar" type="submit" value="Buscar">
+				</form>
+		  </div><!-- Buscador para 800 -->
+
+
+
+		</div> 	<!-- Fin navegacion2 -->
+
+<!-- FIN REDISEÑO HEADER - 06/2011 @Juanma  -->
+
+<a name="top"></a>
+		<div id="Cuerpo">
+
+<!-- //CXBNC -->
+<style type="text/css">
+	#js-adFixedBottom-s {
+		margin-right:-310px;
+		background-color:#fff;
+		border:1px solid #555;
+		border-right:0 none;
+		border-bottom:0 none;
+		width:300px;
+		height:70px;
+		display:block;
+		z-index:8675309;
+		position:fixed;
+		bottom:0;
+		right:0;
+		float:right;
+		box-shadow: 0 0 10px rgb(0,0,0);
+		overflow:hidden;
+	}
+	.js-recommended {
+		display: block;
+		float: left;
+		font-size: 15px;
+		font-weight: bold;
+		margin: 6px 7px;width: 100%;
+	}
+	#adFixedBottom-slide-title {
+		color:#000;
+		font-size:14px;
+		margin:6px 0 0 6px;
+		float:left;
+	}
+	#adFixedBottom-slide-menu {
+		float:right;
+	}
+	#js-adFixedBottom-open, #js-adFixedBottom-close {
+		float:left;
+		font-size:16px;
+		border:1px solid #eee;
+		padding:1px 5px;
+		margin:3px;
+		cursor:pointer;
+	}
+	#adFixedBottom-head {
+		height:30px;
+	}
+	#js-adFixedBottom-s {
+		-moz-border-radius: 7px 0px 0px 7px;
+		border:none !important;
+		border-radius: 7px 0px 0px 7px;
+		background: #ebf5fb;
+                margin-bottom:10px;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf5fb', endColorstr='#ffffff');
+		background: -webkit-gradient(linear, left top, left bottom, from(#ebf5fb), to(#fff));
+		background: -moz-linear-gradient(top,  #ebf5fb,  #fff);
+
+	}
+	.js-recommended {
+		display: block;
+		float: left;
+		font-size: 15px;
+		font-weight: bold;
+		width: 100%;
+		padding-left:35px;
+		margin:0px
+	}
+	.js-recommended  a {
+		text-decoration:none;
+		font-size:14px;
+		font-weight:normal;
+	}
+	#adFixedBottom-slide-title {
+		color:#000;
+		margin:6px 0 0 6px;
+		float:left;
+		font-size:14px;
+		padding-left: 24px;
+		color:#383838;
+		height:auto !important
+	}
+	#adFixedBottom-slide-menu { float:right; }
+	#js-adFixedBottom-open, #js-adFixedBottom-close {
+		float:left;
+		font-size:16px;
+		border:1px solid #eee;
+		padding:1px 5px;
+		margin:3px;
+		cursor:pointer;
+		background:#fff;border-color:#dfe1e2;margin-right:6px
+	}
+	#adFixedBottom-head { height:30px;padding:5px 0px 2px 5px;background:none;border:none !important;background:url(//static.monografias.com/img/lupita.png) no-repeat 10px 10px }
+.msg-regfb-ok{top:0;z-index:9999999;position:fixed!important;box-shadow:none;background-color:#FFFFAA;color:#0033CC;font-weight:bold;text-align:center;line-height:34px;height:34px;width:100%;font-size:12px;display:none}
+</style>
+	<script type="text/javascript">isIE7=false;</script>
+<!--[if lte IE 7]>
+	<script type="text/javascript">isIE7=true;</script>
+<![endif]-->
+<script type="text/javascript">
+var stopwords=["and","or","la","las","lo","los","le","les","a","de","con","contra","para","desde","mi","mí","tu","tú","htm","html","tras","atras","atrás","acerca","y","son","porque","porqué","en","no","si","sí","o","desde","site","esto","estos","eso","esos","esas","esa","estas","estás","fue","que","cuando","como","cuanto","donde","quien","sin","tu","tus","fué","qué","cuándo","cómo","cuánto","dónde","adónde","adonde","quién","tú","monografias","monografias.com","www.monografias.com","monografías","monografías.com","www.monografías.com"];getKeywords=function(e){var t=null;if(typeof CatPubli!="undefined"){var n=new RegExp("^http://(www)?\\.?google.*","i");if(n.exec(e)){var r=new RegExp("[\\?&]q=([^&#]*)");var i=r.exec(e);if(i){t=decodeURIComponent(i[1]).toLowerCase();t=t.replace(/\'|"|\+/g," ");var s=new RegExp("(^|\\s)(\\d+|\\w|"+stopwords.join("|")+")(?=\\s|$)","gi");t=t.replace(s,"");t=t.replace(/^\s+|\s+$/g,"")}}}return t?t:null};var gkeywords=getKeywords(document.referrer);$(document).ready(function(){if(!isIE7&&CatPubli!="undefined"){altoPagina=$("#Pagina").height();appVisibleState="MaxHidden";scrollMiddleTrigger=parseInt(altoPagina/12);$(window).scroll(function(){adFixedBOffset=$("#js-adFixedBottom-s").offset();scrollPos=Number($(document).scrollTop());if(appVisibleState=="MaxHidden"&&scrollPos>scrollMiddleTrigger){appVisibleState="MaxVisible";_gaq.push(["_trackEvent","boxAntiBR","show"])}})}})
+</script>
+
+	<div id="js-adFixedBottom" style="display:none"><!-- 1 -->
+		<div id="js-adFixedBottom-s" style="" class="js-open"><!-- 2 -->
+			<div id="adFixedBottom-head"><!-- 3 -->
+						<div id="adFixedBottom-slide-title">Buscar más trabajos sobre...</div>
+						<div id="adFixedBottom-slide-menu"><!-- 4 -->
+								<div id="js-adFixedBottom-open" style="display:none;">+</div>
+								<div id="js-adFixedBottom-close">×</div>
+						</div><!-- /4 -->
+			</div><!-- /3 -->
+		</div><!-- /2 -->
+	</div><!-- /1 -->
+<!-- //CXBNC -->
+
+
+<div id="vista-mono">
+<!-- CATEGORIAS -->
+<div id="Breadcrumb" class="bred-pdf-ppt">
+<a href="http://www.monografias.com/index.shtml">Monografias.com</a> &gt; <a href="http://www.monografias.com/Computacion/index.shtml">Computacion</a> &gt; <a href="http://www.monografias.com/Computacion/Hardware/index.shtml">Hardware</a></div>
+
+
+<div id="Contextual">
+	<ul>
+		<li><img src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/ico_descargar.gif" alt="" align="absmiddle">&nbsp;
+		<a href="http://www.monografias.com/trabajos11/merced/merced.zip" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Descargas&#39;, &#39;DOC&#39;, &#39;pagina-1&#39;]);"><strong>Descargar</strong></a></li>
+					<li><span class="sprites-2011 sprite-ico_imprimir">&nbsp;
+					<a href="javascript:window.print();">Imprimir</a></span></li>
+					<li><span class="sprites-2011 sprite-ico_coments">&nbsp;
+					<a href="http://www.monografias.com/trabajos11/merced/merced.shtml#Comentarios">Comentar</a></span> <span class="secundario"></span></li>
+					<li><span class="sprites-2011 sprite-ico_relacionados_ch">&nbsp; <a href="http://www.monografias.com/trabajos11/merced/merced.shtml#Relacionados" id="AskSearch">Ver trabajos relacionados</a></span></li>
+				</ul>
+				</div>
+
+
+	<div id="Contenido" class="Monografia">
+	<div id="Publi-int">
+
+<!-- PUBLI 300x250 SEGUN CATEGORIA (Ref #315) -->
+<!-- PUT THIS TAG IN DESIRED LOCATION OF SLOT Computacion_300 -->
+<div id="Publi300CatDyn" ws-zone="9015.00"><script type="text/javascript">
+  var CatPubliX="300"; var CatPubliY = "250"; var CatPubli = "Computacion_300";
+GA_googleFillSlotWithSize("ca-pub-8402207393259754", CatPubli, CatPubliX, CatPubliY);  </script><div id="google_ads_div_Computacion_300"><ins style="position:relative;width:300px;height:250px;border:none;display:inline-table;"><ins style="position:relative;width:300px;height:250px;border:none;display:block;"><iframe id="google_ads_iframe_Computacion_300" name="google_ads_iframe_Computacion_300" width="300" height="250" vspace="0" hspace="0" allowtransparency="true" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; left: 0px; position: absolute; top: 0px; display: none !important;" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/ads(2).html"></iframe></ins></ins></div>
+<script type="text/javascript">var ws_unit = { "id":"9015" };</script>
+<script type="text/javascript" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/ws-ad.js" loaded="1"></script>
+</div>
+<!-- END OF TAG FOR SLOT Computacion_300 -->
+
+<!-- PUBLI 300x250 FIJA (Ref #315) -->
+<!-- Categorias-300-2 -->
+
+
+</div>
+
+<div id="Titulares">
+<h1 class="titulo">
+La Proxima Generación de Arquitecturas de Microprocesadores:</h1>
+	
+				<div id="Autor">
+				<!-- Ref #451 (botones de Twitter y Facebook) -->
+				<span class="twtr_fcbk_buttons" style="float:right;height:30px;margin-right:-30px;width:330px;">
+					<span style="float:left;">
+					<div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1479771722773" name="I0_1479771722773" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div>
+					</span>
+					<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/tweet_button.f7908d4abf5ce27173c69bdbb93aedb6.es.html" style="position: static; visibility: visible; width: 70px; height: 20px;"></iframe>
+					<fb:like layout="button_count" show_faces="false" width="120" font="arial" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=168580619833974&amp;container_width=0&amp;font=arial&amp;href=http%3A%2F%2Fwww.monografias.com%2Ftrabajos11%2Fmerced%2Fmerced.shtml&amp;layout=button_count&amp;locale=es_ES&amp;sdk=joey&amp;show_faces=false&amp;width=120"><span style="vertical-align: bottom; width: 86px; height: 20px;"><iframe name="f2b9317f4ba2fe" width="120px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/like.html" style="border: none; visibility: visible; width: 86px; height: 20px;" class=""></iframe></span></fb:like>
+				</span>
+					<span class="sprites-2011 sprite-ico_autor"></span>
+				    <strong>
+
+
+Enviado por <a href="http://www.monografias.com/usuario/perfiles/19962723" id="contacto">19962723 </a>
+</strong>
+</div>
+
+<!-- PUBLI CUSTOM (Ref #439) -->
+<hr>
+<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- MonoTXT -->
+<ins class="adsbygoogle" style="display:inline-block;width:530px;height:85px" data-ad-client="ca-pub-1883945583732831" data-ad-slot="9838864578"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr>
+
+
+
+<div id="Highlight"></div><!-- Palabras Resaltadas -->
+			</div>
+<br><p style="clear:left"></p>
+
+
+
+<!-- PARTES -->
+<div align="center">Partes: <a href="http://www.monografias.com/trabajos11/merced/merced.shtml">1</a>, <a href="http://www.monografias.com/trabajos11/merced/merced2.shtml">2</a></div>
+
+<!-- MONO DESTACADA -->
+<div align="center"><img height="57" width="150" alt="Monografía destacada" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/mono-destacada.gif"></div>
+
+<!-- INDICE -->
+<ol>
+		<li><b><a href="http://www.monografias.com/trabajos11/merced/merced.shtml#introducca">Introducción</a></b></li>
+		<li><b><a href="http://www.monografias.com/trabajos11/merced/merced.shtml#iaunadesca">IA-64: Una descripción inicial</a></b></li>
+		<li><b><a href="http://www.monografias.com/trabajos11/merced/merced2.shtml#tecnicasya">Técnicas y conceptos innovadores</a></b></li>
+		<li><b><a href="http://www.monografias.com/trabajos11/merced/merced2.shtml#registrosa">Registros</a></b></li>
+		<li><b><a href="http://www.monografias.com/trabajos11/merced/merced2.shtml#instruccia">Instrucciones</a></b></li>
+		<li><b><a href="http://www.monografias.com/trabajos11/merced/merced2.shtml#compatibia">Compatibilidad</a></b></li>
+		<li><b><a href="http://www.monografias.com/trabajos11/merced/merced2.shtml#conclusioa">Conclusión</a></b></li>
+		<li><b><a href="http://www.monografias.com/trabajos11/merced/merced2.shtml#glosarioa">Glosario</a></b></li>
+		<li><b><a href="http://www.monografias.com/trabajos11/merced/merced2.shtml#bibliograa">Bibliografía</a></b></li>
+	</ol>
+
+<div id="adhispanic"> <!-- CUERPO -->
+ <a name="introducca"><h2><b><em>Introducción:</em></b></h2>
+</a><p>Las arquitecturas tradicionales de los <a href="http://www.monografias.com/trabajos11/micro/micro.shtml" id="autolink" class="autolink">microprocesadores</a> tienen atributos fundamentales que limitan su <a href="http://www.monografias.com/trabajos15/indicad-evaluacion/indicad-evaluacion.shtml" id="autolink" class="autolink">desempeño</a>. Para lograr un alto rendimiento, los <a href="http://www.monografias.com/trabajos5/sisope/sisope.shtml" id="autolink" class="autolink">procesadores</a> no solo deben ejecutar las instrucciones de una manera más rápida, sino, que también deben ejecutar mas instrucciones por ciclo de reloj, a esto nos referimos como una mayor "ejecución en paralelo".</p>
+<p>Mayor ejecución en paralelo permite que más <a href="http://www.monografias.com/trabajos7/sisinf/sisinf.shtml" id="autolink" class="autolink">información</a> sea procesada al mismo <a href="http://www.monografias.com/trabajos901/evolucion-historica-concepciones-tiempo/evolucion-historica-concepciones-tiempo.shtml" id="autolink" class="autolink">tiempo</a>, por consiguiente esto mejora el rendimiento global del <a href="http://www.monografias.com/trabajos5/sisope/sisope.shtml" id="autolink" class="autolink">procesador</a>.</p>
+<p>En arquitecturas tradicionales, el procesador por lo general es sub-utilizado debido a su habilidad limitada para organizar instrucciones. Ramificaciones (instrucciones que cambian el flujo de ejecución interno de un <a href="http://www.monografias.com/Computacion/Programacion/" id="autolink" class="autolink">programa</a>) y retrieve de <a href="http://www.monografias.com/trabajos13/memor/memor.shtml" id="autolink" class="autolink">memoria</a> (el tiempo que la data se demora en llegar de <a href="http://www.monografias.com/trabajos16/memorias/memorias.shtml" id="autolink" class="autolink">la memoria</a>) componen la ya limitada habilidad de los procesadores de hoy en día para lograr la ejecución en paralelo.</p>
+<p>Para superar estas limitaciones, una nueva <a href="http://www.monografias.com/trabajos6/arma/arma.shtml" id="autolink" class="autolink">arquitectura</a> es requerida. Las arquitecturas tradicionales demuestran su paralelismo mediante <a href="http://www.monografias.com/trabajos12/eticaplic/eticaplic.shtml" id="autolink" class="autolink">código</a> de maquina secuencial que implica paralelismo solo del procesador.</p>
+<p>Intel y Hewlett-Packard han definido conjuntamente una nueva <a href="http://www.monografias.com/Tecnologia/index.shtml" id="autolink" class="autolink">tecnología</a> de arquitectura llamada EPIC llamada así por la habilidad del <a href="http://www.monografias.com/Computacion/Software/" id="autolink" class="autolink">software</a> de extraer el máximo paralelismo (potencial para trabajar en paralelo) del código original y explícitamente describirlo al <a href="http://www.monografias.com/Computacion/Hardware/" id="autolink" class="autolink">hardware</a>.</p>
+<p>Intel y HP se han basado en esta tecnología EPIC para definir la arquitectura del set de instrucciones (ISA) que será incorporada en la arquitectura final del <a href="http://www.monografias.com/trabajos12/microco/microco.shtml" id="autolink" class="autolink">microprocesador</a> de 64-bits de Intel. </p>
+<p>Esta nueva tecnología ISA de 64-bits trae consigo un modus operandi innovador, ya que haciendo uso de su tecnología EPIC, y combinando paralelismo explícito con conceptos y <a href="http://www.monografias.com/trabajos6/juti/juti.shtml" id="autolink" class="autolink">técnicas</a> avanzadas de arquitectura de <a href="http://www.monografias.com/trabajos15/computadoras/computadoras.shtml" id="autolink" class="autolink">computadoras</a> llamadas especulación y predicación superará todas las limitaciones de las arquitecturas tradicionales.</p>
+<a name="iaunadesca"></a><h2><a name="iaunadesca"><b><em>IA-64: Una </em></b></a><b><em><a href="http://monografias.com/trabajos10/anali/anali.shtml" id="autolink" class="autolink">descripción</a> inicial:</em></b></h2>
+<p align="left">El 4 Oct. 1999 Intel anunció el nuevo nombre para su primer microprocesador IA-64 de nombre clave Merced, Itanium.</p>
+<p align="left">IA-64 significa Arquitectura Intel de 64-bits.</p>
+<p align="left">Se espera que este en <a href="http://www.monografias.com/trabajos16/estrategia-produccion/estrategia-produccion.shtml" id="autolink" class="autolink">producción</a> a mediados del 2000.</p>
+<p align="left">Itanium supuestamente reemplazara toda la línea de procesadores Xeon, que en este momento esta ocupando un lugar muy importante en la <a href="http://www.monografias.com/trabajos16/industria-ingenieria/industria-ingenieria.shtml" id="autolink" class="autolink">industria</a> de los <a href="http://www.monografias.com/trabajos12/rete/rete.shtml" id="autolink" class="autolink">servidores</a>.</p>
+<p>Se afirma que tendrá un rendimiento para <a href="http://www.monografias.com/Computacion/Redes/" id="autolink" class="autolink">redes</a> suficiente como para sacarle una ventaja a los RISC de un 20-30% en este rubro.</p>
+<p>Intel espera que el nuevo procesador opere a una frecuencia de reloj alrededor de los 800 MHz y que entregue entre 45-50 SPECint95 y 70-100 SPECfp95 (base). </p>
+<p>Mientras que en modo x86, Itanium podría igualar el rendimiento de un <a href="http://www.monografias.com/trabajos10/pentium/pentium.shtml" id="autolink" class="autolink">Pentium</a> II de 500-MHz.</p>
+<p>Consumirá 60 Watts. El chip IA-64 esta mas o menos por encima de los 300 mm2.</p>
+<p>Se ha estimado que cada uno de los chips Itanium  tendrá  como <a href="http://www.monografias.com/trabajos16/fijacion-precios/fijacion-precios.shtml#ANTECED" id="autolink" class="autolink">precio</a> de <a href="http://www.monografias.com/trabajos12/curclin/curclin.shtml" id="autolink" class="autolink">venta</a> $5,000.</p>
+<p>Itanium mejorara su labor con características como el ECC y lo que Intel llama EMC. Si el chip Itanium cae repetidamente en excepciones de ECC, la arquitectua alerta al <a href="http://www.monografias.com/Computacion/Sistemas_Operativos/" id="autolink" class="autolink">sistema operativo</a>.</p>
+<p>El <a href="http://www.monografias.com/trabajos12/comptcn/comptcn.shtml#UCP" id="autolink" class="autolink">CPU</a> del Itanium esta combinado con mas de 4M de SRAM en un modulo que esta conectado horizontalmente a la <a href="http://www.monografias.com/trabajos14/tarjeta-madre/tarjeta-madre.shtml" id="autolink" class="autolink">tarjeta madre</a>.</p>
+<p> El procesador será producido con una tecnología de 0.18 micras, la cual también esta siendo desarrollada por Intel Corporation. Decrementando las características de esa tecnología, permite reducir el <a href="http://www.monografias.com/trabajos35/el-poder/el-poder.shtml" id="autolink" class="autolink">poder</a> de disipación, aumentar la frecuencia de operación y agrandar la <a href="http://www.monografias.com/trabajos6/dige/dige.shtml#evo" id="autolink" class="autolink">escala</a> de <a href="http://www.monografias.com/trabajos11/funpro/funpro.shtml" id="autolink" class="autolink">integración</a>. Esta última permite colocar mas unidades funcionales, mas <a href="http://www.monografias.com/trabajos7/regi/regi.shtml" id="autolink" class="autolink">registros</a> y más cache dentro del procesador.</p>
+<p>Tendrá cache L1 y L2 en el chip, y cache L3 en el paquete Itanium (el cual es más pequeño que una tarjeta de presentación de 3x5"), mas no adentro del chip, el cual se utilizara para reducir el trafico de <a href="http://www.monografias.com/trabajos/bus/bus.shtml" id="autolink" class="autolink">bus</a>. El Itanium vendrá con 4 MB de cache L3.  Incluirá una opción de 2 Mbytes o de 4 Mbytes de cache L2. OEM"s también podrán añadir cache L4.</p>
+<p>El primer Itanium será un modulo de estilo cartucho, incluyendo un CPU, cache L1 y L2 y una interface de bus. El cartucho usara un <a href="http://www.monografias.com/trabajos11/teosis/teosis.shtml" id="autolink" class="autolink">sistema</a> de bus recientemente definido, usando conceptos del bus del Pentium-II. El Itanium será capaz de soportar  6 gigaflops. Tendrá 4 unidades para enteros y dos unidades de punto flotante.</p>
+<p>IA-64 es algo completamente diferente, es una mirada anticipada a la arquitectura que usa "palabras de instrucciones largas" (LIW), predicación de instrucciones, eliminación de ramificaciones, carga especulativa, y otras técnicas avanzadas para extraer mas paralelismo del código de programa.</p>
+<p>Definitivamente Intel continuará en el futuro con el <a href="http://www.monografias.com/trabajos12/desorgan/desorgan.shtml" id="autolink" class="autolink">desarrollo</a> de procesadores IA-32, tal es el caso de  Foster, por ejemplo. Estos futuros procesadores alcanzaran un nivel de desempeño impresionante.</p> <!-- FIN CUERPO -->
+
+<!-- PARTES -->
+<div align="center">Partes: <a href="http://www.monografias.com/trabajos11/merced/merced.shtml">1</a>, <a href="http://www.monografias.com/trabajos11/merced/merced2.shtml">2</a></div>
+
+<br>
+
+</div>
+
+		<!-- Paginador -->
+	<table class="Paginadortrab" width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tbody><tr>
+	<td align="right"><a href="http://www.monografias.com/trabajos11/merced/merced2.shtml"><strong><big>Página siguiente</big></strong></a>&nbsp;<img src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/b_siguiente.gif" alt="" border="0" align="top"></td>
+	</tr>
+	</tbody></table>
+
+</div>
+<!-- Fin Contenido -->
+
+</div><!-- /vista-mono -->
+
+<!-- COMENTARIOS -->
+<script type="text/javascript">
+        mono.temp_mono_id = 28469;
+</script>
+
+<div id="Comentarios">
+
+	<a name="Comentarios"></a>
+
+	<h2>Comentarios</h2>
+
+	<div id="js-comentarios"></div>
+
+	<div id="js-comentario-publicado" class="comentario-publicado" style="display:none;">
+		<p>El comentario ha sido publicado.</p>
+	</div>
+
+	<div id="js-comentario-error" class="comentario-error" style="display:none;">
+		<p>&nbsp;</p>
+	</div>
+
+	<div id="js-inicia-primero" class="comentario-publicado" style="">
+		<p>Para dejar un comentario, <a href="http://www.monografias.com/usuario/registro">regístrese gratis</a> o si ya está registrado, <a href="http://www.monografias.com/usuario/login">inicie sesión</a>.</p>
+	</div>
+
+	<div id="cont-form-comentario" style="display:none;">
+		<form id="form-enviar-comentario" name="form-enviar-comentario" action="http://www.monografias.com/trabajos11/merced/merced.shtml" method="post">
+			<label for="comentario-texto">Agregar un comentario</label>
+			<textarea name="comentario-texto" autocomplete="off"></textarea>
+			<button type="submit" class="submit" disabled="">Enviar comentario</button>
+			<p class="secundario">Los comentarios están sujetos a los <a href="http://www.monografias.com/politicas.shtml">Términos y Condiciones</a>
+		</p></form>
+	</div>
+
+</div>
+<!-- FIN COMENTARIOS -->
+
+
+<div><div></div></div> <!-- dos divs adicionales por bug en IE, no quitar -->
+
+<!-- Cualquier contenido adicional, meterlo aca -->
+<div id="Adicional">
+<hr color="gray">
+<table width="98%" align="center" border="0" id="Excepcion">
+<tbody><tr>
+<td width="45%" id="Excepcion">
+
+<!-- RELACIONADOS - Computacion/Hardware -->
+<div id="Relacionados">
+	<a name="Relacionados"></a>
+	<h2>Trabajos relacionados</h2>
+
+<ul id="Monos" class="ul-relacionados">
+		<li>
+			<span class="sprites-2011 sprite-ico_mono"></span>
+			<h3><a href="http://www.monografias.com/trabajos5/resudeimp/resudeimp.shtml">Sistemas de computación - Resumen de Impresoras</a></h3>
+			<p> ¿Cómo es básicamente un proceso de impresión?. ¿De qué formas se puede conectar una impresora a una PC?. ¿Qué tipos de i...</p>
+		</li>
+
+		<li>
+			<span class="sprites-2011 sprite-ico_mono"></span>
+			<h3><a href="http://www.monografias.com/trabajos5/teccisc/teccisc.shtml">Tecnología CISC vs RISC</a></h3>
+			<p> Procesadores: CISC y RISC. Kripton - 5 O K5 de Amd. Pentium pro de intel. Mips. Sun microsystems. Hewlett - packard. Fun...</p>
+		</li>
+
+		<li>
+			<span class="sprites-2011 sprite-ico_mono"></span>
+			<h3><a href="http://www.monografias.com/trabajos5/elmodem/elmodem.shtml">El modem - Las comunicaciones entre ordenadores</a></h3>
+			<p> Naturaleza de la informacion. Modulación de la informacion: el modem. Estándares de modulacion. Codificación de la infor...</p>
+		</li>
+	</ul>
+	<p align="right"> Ver mas trabajos de <a href="http://www.monografias.com/Computacion/Hardware/">Hardware</a></p>
+</div>
+
+</td><td width="5%" id="Excepcion">&nbsp;</td>
+
+
+
+<td width="50%" valign="top">
+<div>
+<!-- PubliQ -->
+</div>
+</td></tr></tbody></table>
+
+
+<p class="advertencia"><small>Nota al lector: es posible que esta página no contenga todos los componentes del trabajo original (pies de página, avanzadas formulas matemáticas, esquemas o tablas complejas, etc.). Recuerde que para ver el trabajo en su versión original completa, puede descargarlo desde el <a href="http://www.monografias.com/trabajos11/merced/merced.shtml#top">menú superior</a>.
+</small></p>
+
+<div align="center">
+<!-- PUT THIS TAG IN DESIRED LOCATION OF SLOT 728x90Footer -->
+<!-- END OF TAG FOR SLOT 728x90Footer -->
+</div>
+
+<br>
+<p class="ml10 mr10"><small>Todos los documentos disponibles en este sitio expresan los puntos de vista de sus respectivos autores y no de Monografias.com. El objetivo de Monografias.com es poner el conocimiento a disposición de toda su comunidad. Queda bajo la responsabilidad de cada lector el eventual uso que se le de a esta información. Asimismo, es obligatoria la cita del autor del contenido y de Monografias.com como fuentes de información.</small></p>
+
+</div>
+
+
+		</div> 	<!-- Fin Cuerpo -->
+
+	
+		<div id="Footer">
+		  <div class="cajita">
+		  <p align="center" class="secundario">El Centro de Tesis, Documentos, Publicaciones y Recursos Educativos más amplio de la Red.<br>
+		  <a href="http://www.monografias.com/politicas.shtml">Términos y Condiciones</a> | <a href="http://www.monografias.com/mediakit">Haga publicidad en Monografías.com</a> | <a href="http://www.monografias.com/contacto.shtml">Contáctenos</a> | <a href="http://blogs.monografias.com/institucional/">Blog Institucional</a><br>© Monografias.com S.A.</p>
+		  <!-- <p align="center"><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10"
+			alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a></p>
+			-->
+			</div>
+			<div><div></div></div> <!-- dos divs adicionales por bug en IE, no quitar -->
+		</div> 	<!-- Fin Footer -->
+	
+	</div> <!-- Fin Pagina -->
+
+</div> 
+
+<!-- Fin Wrap -->
+
+
+<!-- e-planning v3 - Comienzo espacio Monografias _ monografias _ monografias -->
+<!-- Deprecated -->
+<!-- e-planning v3 - Fin espacio Monografias _ monografias _ monografias -->
+
+
+<!-- Ventana modal de descarga de archivo (#446) -->
+<span id="js-descargaModal" style="display:none;">
+
+		<div id="modalBackgroundOverlay" style="display: block; opacity: 0.6; filter:alpha(opacity=60);"></div>
+
+<div id="colorbox" style="display: block; height: 644px; margin-top: 14px; width: 644px;">
+		<div id="borderTopLeft" style="top: 0px; left: 0px;"></div>
+		<div id="borderTopCenter" style="top: 0px; left: 21px; width: 602px; display: block;"></div>
+		<div id="borderTopRight" style="top: 0px; left: 623px;"></div>
+		<div id="borderMiddleLeft" style="top: 21px; left: 0px; height: 602px; display: block;"></div>
+		<div id="borderMiddleRight" style="top: 21px; left: 623px; height: 602px; display: block;"></div>
+		<div id="borderBottomLeft" style="top: 623px; left: 0px;"></div>
+		<div id="borderBottomCenter" style="top: 623px; left: 21px; width: 602px; display: block;"></div>
+		<div id="borderBottomRight" style="top: 623px; left: 623px;"></div>
+
+					<div id="modalContent" style="width: 602px; height: 602px; display: block; top: 21px; left: 21px;">
+
+										<div id="modalLoadedContent" style="height: 560pxpx; width: 600px; display: block;">
+
+											<a href="http://www.monografias.com/trabajos11/merced/merced.shtml#" id="js-descargaModal-cerrar" style="float:right;height:16px;">cerrar</a>
+
+											<span id="publi-modal">
+												<!-- contenido acá -->
+											</span>
+
+											<br id="modalInfoBr">
+											<span id="contentTitle"></span>
+
+										</div><!-- /modalLoadedContent -->
+
+								<div id="modalLoadingOverlay" style="display: none;"></div>
+
+					</div><!-- /modalContent -->
+
+</div><!-- /colorbox -->
+
+</span><!-- /descargaModal -->
+
+<!-- /Descarga modal -->
+
+
+<div id="login-box-container">
+
+	<div class="login-box clearfix">
+	
+		<h1>Iniciar sesión</h1>
+		
+		<div class="notificacion clearfix" style="">
+			<div class="mensaje-de generico">
+				<p>Ingrese el e-mail y contraseña con el que está registrado en Monografias.com</p>
+
+			</div>
+		</div>
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+				<td width="60%">
+		
+				
+		<form id="js-loginform" name="login" action="http://www.monografias.com/usuario/login" method="post">
+		<table width="100%" border="0" cellspacing="5" cellpadding="0">
+			<tbody><tr>
+				<td align="right" width="1%" nowrap="nowrap"><label for="email">E-mail:</label></td>
+
+				<td><input name="email" class="" type="text"></td>
+			</tr>
+			<tr>
+				<td align="right" nowrap="nowrap"><label for="password">Contraseña:</label></td>
+				<td><input class="" name="password" type="password"></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+
+				<td><input name="recordar" value="1" type="checkbox">&nbsp;<label for="recordar"><span class="secundario">Recordarme en este equipo</span></label></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input name="Submit" value="Iniciar sesión" class="" type="submit"></td>
+			</tr>
+		</tbody></table>
+		</form>	
+					
+			
+			</td>
+
+			
+			<td align="left" valign="top">
+				<p class="ico-registro mb6"><a href="http://www.monografias.com/usuario/registro">Regístrese gratis</a></p>
+				<p class="ico-olvidopass mb6"><a href="http://www.monografias.com/usuario/recuperarclave">¿Olvidó su contraseña?</a></p>
+				<p class="ico-ayuda mb6"><a href="http://www.monografias.com/usuario/ayuda">Ayuda</a></p>
+         <div id="socialLinks">
+		 
+            <fb:login-button scope="email,publish_stream" onlogin="recargarPantalla()" login_text="" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=168580619833974&amp;container_width=0&amp;locale=es_ES&amp;scope=email%2Cpublish_stream&amp;sdk=joey"><span style="vertical-align: bottom; width: 64px; height: 22px;"><iframe name="f2cb9c354f269c" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:login_button Facebook Social Plugin" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/login_button.html" class="" style="border: none; visibility: visible; width: 64px; height: 22px;"></iframe></span></fb:login-button>
+         </div>       
+		<div id="twitter-btn">
+			
+		</div>
+				</td>
+
+		</tr>
+	</tbody></table>
+	
+	</div>
+
+</div>
+<script language="javascript">
+/* WILKON - links sociales*/
+function activarTwitter(){
+	  objeto = $("#twitter-btn");
+	  var html;
+	  var queryString = mono.CFG.URL_MONO + "usuario/getlinks/?t=1&jsoncallback=?";
+	  //esto es asincronico
+	  $.getJSON(queryString, function(response) {
+		  html = '<a href="'+ response.twitterLink +'"><span style="margin-top:7px;display:inline-block;padding:0;" class="sprites-2011-main sprite-twt-connect"></span></a>';
+		  objeto.html(html);
+	   }); 
+}
+
+if(monoTrabajoCat != 'derecho'){
+<!-- e-planning v3 - Comienzo espacio Monografias _ Otras _ POPs para GAM -->
+	if(typeof CatPubliX != "undefined" && CatPubliX=="300"){
+		var rnd = (new String(Math.random())).substring(2,8) + (((new Date()).getTime()) & 262143);
+		var cs = document.charset || document.characterSet;
+		document.write('<scri' + 'pt language="JavaScript1.1" type="text/javascript" src="http://ads.us.e-planning.net/eb/3/548/7b3c72cf4a47149a?o=j&rnd=' + rnd + '&crs=' + cs + '"></scr' + 'ipt>');
+	}
+<!-- e-planning v3 - Fin espacio Monografias _ Otras _ POPs para GAM -->
+};
+</script><script language="JavaScript1.1" type="text/javascript" src="http://ads.us.e-planning.net/eb/3/548/7b3c72cf4a47149a?o=j&amp;rnd=60615336933&amp;crs=UTF-8"></script>
+
+
+
+
+<div id="modalBackgroundOverlay" style="display: none;"></div><div id="colorbox" style="display: none;"><div id="borderTopLeft"></div><div id="borderTopCenter"></div><div id="borderTopRight"></div><div id="borderMiddleLeft"></div><div id="borderMiddleRight"></div><div id="borderBottomLeft"></div><div id="borderBottomCenter"></div><div id="borderBottomRight"></div><div id="modalContent"><div id="modalLoadedContent"><a id="contentPrevious" href="http://www.monografias.com/trabajos11/merced/merced.shtml#"></a><a id="contentNext" href="http://www.monografias.com/trabajos11/merced/merced.shtml#"></a><span id="contentCurrent"></span><br id="modalInfoBr"><span id="contentTitle"></span><div id="preloadPrevious"></div><div id="preloadNext"></div><div id="preloadClose"></div></div><div id="modalLoadingOverlay"></div><a id="modalClose" href="http://www.monografias.com/trabajos11/merced/merced.shtml#"></a></div></div><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 10; top: 0px; left: 0px; display: none;"></ul><iframe name="oauth2relay712280249" id="oauth2relay712280249" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><div style="display: none;"><div style="vertical-align:middle;position: fixed;bottom:0;width: 100%;background-color:#000000;overflow:none;opacity:1;z-index:2147483647"><button style="font-size: 11px; margin: 0px; vertical-align: baseline; display: inline;">close</button><input type="text" style="font-size: 11px; margin: 0px; vertical-align: baseline; display: inline; width: 250px;"><input type="button" value="&gt;" style="font-size: 11px; margin: 0px; vertical-align: baseline; display: inline;"><select style="font-size: 11px; margin: 0px; vertical-align: baseline; display: inline;"><option value="PageLog - Toggle">1. PageLog - Toggle</option><option value="focus - toggle">2. focus - toggle</option><option value="idle - toggle">3. idle - toggle</option><option value="ortc - connect">4. ortc - connect</option><option value="ortc - disconnect">5. ortc - disconnect</option><option value="ortc - isConnected">6. ortc - isConnected</option><option value="zone - next banner">7. zone - next banner</option><option value="zones - highlight">8. zones - highlight</option></select><input type="button" value="&gt;" style="font-size: 11px; margin: 0px; vertical-align: baseline; display: inline;"><span style="color:#ffffff;font-size:10px"></span><span style="color:#ff0000;font-size:10px"></span><span id="version" style="float:right;margin-right:5px;color:#ff0000;font-size:12px;align:right;valign:middle">4.4.42</span><span style="float:right;margin-right:5px;color:#FFFFFF;font-size:12px;align:right;valign:middle">Status:<span id="newScriptStatus" style="color: green;">Active</span></span></div></div><div id="ws_inst_trigger" style="bottom:0;padding:5px;position:fixed;width:5px;height:5px;background-color:#ff0000;opacity:0.0;filter: alpha(opacity = 0);z-index:2147483647"></div><div class="ws-wss ws-wss-left" style="width: 160px; height: 600px; z-index: 1; position: fixed; top: 37px; left: 0px;" ws-zone="10609.00"><iframe style="border-width: 0px; display: none; margin: 0px auto;" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/saved_resource.html" loaded="1"></iframe><div style="display:none;margin:0px auto;text-align:initial !important;clear:both;position:relative;" class="ws--slot ws--slot-0"><iframe style="border-width: 0px; margin: 0px auto; display: none; width: 0px; height: 0px;" scrolling="no" frameborder="no" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/saved_resource(1).html"></iframe></div></div><img style="width:0;height:0;display:none;" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/cr"><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./La Proxima Generación de Arquitecturas de Microprocesadores_ - Monografias.com_files/saved_resource(2).html"></iframe></body></html>

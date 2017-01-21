@@ -1,0 +1,1 @@
+/**/Tynt.sc({"ap":"Leer más:","d":true,"domain":"monografias.com"})

@@ -1,0 +1,80 @@
+﻿/* $Id: color-brown-style.css,v 1.0.0 2013/09/25 08:18:15 symphonythemes Exp $ */
+/*------------------------------------*\
+	RESET
+\*------------------------------------*/
+
+a,
+a:link,
+a:visited {
+  color: #428BCA;
+}
+
+.themecolor-text {
+  color: #000000;
+}
+pre,
+div.code {
+  border-left: 5px solid #000000;
+}
+.highlight {
+  background: #000000;
+}
+
+/*------------------------------------*\
+	Pages CSS
+\*------------------------------------*/
+
+#header {
+  background-color: #000000;
+}
+
+
+/*------------------------------------*\
+	NAVIGATION CSS
+\*------------------------------------*/
+li a.active {
+  color: #000000;
+}
+
+@media (max-width: 767px) {  
+  .navbar-collapse {
+	background:#000000;
+  }
+}
+
+.btn-primary {
+  background:#000000;
+  border-color: #FFFFF;
+}
+
+/*------------------------------------*\
+	BUSINESS CSS
+\*------------------------------------*/
+#views-exposed-form-map-list-business-page-1 .form-submit {
+  background: #FFFFF;
+  border-color: #6e2205;
+}
+.view-list-business .views-row .views-field-field-address i,
+.view-list-business .views-row .views-field-field-telephone i,
+.view-list-business .views-row .views-field-field-website i {
+  color: #000000;
+}
+.node-business .content .field .field-label {
+  color: #000000;
+}
+.node-business .content .field.field-name-body:before,
+.node-business .content .field.field-name-field-website:before,
+.node-business .content .field.field-name-field-open-time:before,
+.node-business .content .field.field-name-field-price-range:before,
+.node-business .content .field.field-name-field-highlights:before,
+.node-business .content .field.field-name-field-location:before,
+.node-business .content .field.field-name-field-photos:before,
+.node-business .content .field.field-name-field-tags:before,
+.node-business .content .field.field-name-field-category:before {
+  color: #000000;
+}
+
+
+.view-categories .views-row .views-row-inner .views-field-field-category-image .field-node-count {
+  background: rgba(150,80,53,0.8);
+}
