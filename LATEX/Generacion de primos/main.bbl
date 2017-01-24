@@ -1,0 +1,46 @@
+\begin{thebibliography}{1}
+
+\bibitem{h}
+Andrzej Chmielowiec.
+\newblock Primality proving with gauss and jacobi sums.
+\newblock {\em Primality proving with Gauss and Jacobi sums}, 42, 72-75.
+
+\bibitem{d}
+Ashok K. Chandra~George Markowsky.
+\newblock On the number of prime implicants.
+\newblock {\em On the number of prime implicants}, 1977.
+
+\bibitem{g}
+Shaft Goldwasser J. C. Lagarias Arjen K. Lenstra Kevin S. McCurley A.~M.
+  Odlysko.
+\newblock Proceedings of symposia in applied mathematics.
+\newblock {\em Cryptology and Computational Number Theory}, 42, 19-30.
+
+\bibitem{e}
+Marc Joye~Pascal Paillier.
+\newblock Constructive methods for the generation of prime numbers.
+\newblock {\em Constructive Methods for the Generation of Prime Numbers}, 2001.
+
+\bibitem{b}
+William Stallings.
+\newblock Cryptography and network security.
+\newblock {\em Cryptography and Network Security}, 4to Edicion:245--251, 2005.
+
+\bibitem{c}
+Alfred J.Menezes Paul C.van Oorschot Scott~A. Vanstone.
+\newblock Handbook of applied cryptography.
+\newblock {\em Introduction, Information security and cryptography}, 4to
+  Edicion:133--149, 1996.
+
+\bibitem{f}
+Marc Joye Pascal Paillier~Serge Vaudenay.
+\newblock Efficient generation of prime numbers.
+\newblock {\em Efficient Generation of Prime Numbers}, 2000.
+
+\bibitem{a}
+Marcela Wilder.
+\newblock Test de primalidad, aplicación a la criptografía.
+\newblock {\em Test de Primalidad, aplicación a la criptografía}, pages
+  44--46.
+
+\end{thebibliography}

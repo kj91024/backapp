@@ -1,0 +1,58 @@
+\documentclass[11pt, conference]{IEEEtran}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{cite}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
+\addtocounter{tocdepth}{-1}
+
+
+\onecolumn
+\begin{document}
+	\title{\bf Trabajo de Arquitectura de Computadores}
+	\author{Jose David Mamani Vilca \\
+		Kevin Jhomar Sanchez Sanchez \\}
+	\maketitle
+	
+\section{Pseudocodigo}
+\begin{enumerate}
+	\item inicio: 
+	\item \qquad pointer = n
+	\item bucle:
+	\item \qquad if pointer = 0055h goto salir
+	\item \qquad \qquad pointer = 5
+	\item \qquad \qquad goto bucle
+	\item salir: exit
+\end{enumerate}
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\section{Visto en una tabla, que representa las acciones de la memoria}
+\begin{table}[htb]
+	\begin{center}
+		\begin{tabular}{lll}
+			\hline
+			{\bf Dir. Física} & {\bf Instrucción} & {\bf Instrucción Ensamblada }  \\
+			\hline
+			$0000_h$ & MLOAD $0050_h$ & $1050_h$ \\ 
+			$0001_h$ & DSTORE $0020_h$& $4020_h$ \\
+			$0002_h$ & MLOAD $0055_h$& $1055_h$ \\ 
+			$0003_h$ & NEGATE & $0001_h$ \\ 
+			$0004_h$ & ADD $0020_h$& $A020_h$ \\ 
+			$0005_h$ & JZ $000C_h$& $700C_h$  \\
+			$0006_h$ & MLOAD $0005_h$& $1005_h$  \\ 
+			$0007_h$ & DSTORE $0020_h$& $4020_h$  \\ 
+			$0008_h$ & MLOAD $0001_h$& $1001_h$  \\ 
+			$0009_h$ & ADD  $0020_h$& $A020_h$  \\  
+			$000A_h$ & DSTORE $0020_h$& $4020_h$  \\  
+			$000B_h$ & JMP $0003_h$& $0003_h$  \\ 
+			$000C_h$ & HALT & $0000_h$ \\ 
+		\end{tabular}
+	\end{center}
+\end{table}
+\end{document}

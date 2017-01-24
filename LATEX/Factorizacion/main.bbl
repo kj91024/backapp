@@ -1,0 +1,39 @@
+\begin{thebibliography}{1}
+
+\bibitem{c}
+Scott A.~Vanstone Alfred~J.Meneses, Paul C.van~Oorschot.
+\newblock Handbook of applied cryptography.
+\newblock {\em Handbook of Applied Cryptography}, pages 89--98.
+
+\bibitem{d}
+Scott A.~Vanstone Alfred~J.Meneses, Paul C.van~Oorschot.
+\newblock Prime number.
+\newblock {\em A computational perspective}, pages 225--242.
+
+\bibitem{f}
+Eric Bach.
+\newblock Lecture 24: Dixon’s algorithm.
+\newblock {\em Lecture 24: Dixon’s Algorithm}, pages 1--3.
+
+\bibitem{e}
+Jose Raul~Duran Diaz.
+\newblock Números primos especiales y sus aplicaciones criptográficas.
+\newblock {\em Números primos especiales y sus aplicaciones criptográficas},
+  pages 98--101.
+
+\bibitem{b}
+Urko~Nalda Gil.
+\newblock Factorización.
+\newblock {\em Factorización}, pages 9--41.
+
+\bibitem{a}
+Leonel Sergio~Carrasco Pérez.
+\newblock Factorización de enteros.
+\newblock {\em Factorización de Enteros}, pages 13--65.
+
+\bibitem{h}
+William Stallings.
+\newblock Criptography and network security.
+\newblock {\em Principles and Practices}, pages 276--277.
+
+\end{thebibliography}

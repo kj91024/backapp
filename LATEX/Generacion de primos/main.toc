@@ -1,0 +1,24 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {I}Introducci\IeC {\'o}n}{2}
+\contentsline {section}{\numberline {II}N\IeC {\'u}meros primos}{2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Definici\IeC {\'o}n}{2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Generaci\IeC {\'o}n de primos fuertes}{2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}La Primalidad}{2}
+\contentsline {section}{\numberline {III}Test de Pseudoprimalidad}{2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Teorema de Tchebycheff}{2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}El Peque\IeC {\~n}o Teorema de Fermat}{3}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Teorema de Mersenne}{3}
+\contentsline {section}{\numberline {IV}Test de Primalidad}{3}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Teorema de Wilson}{3}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Criba de Eratostenes}{3}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Criba de Atkin}{4}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-D}}Test de Solovay-Strassen}{5}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-E}}Teorema de Miller-Rabin}{5}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-F}}Algoritmo de Williams/Schmid}{6}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-G}}Algoritmo de Gordon}{6}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-H}}Espiral de Ulam}{6}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-I}}Test de Lucas}{6}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-J}}Test de Jacobi Sum}{6}
+\contentsline {section}{\numberline {V}Conclusi\IeC {\'o}n}{7}
+\contentsline {section}{Referencias}{8}
+\contentsline {section}{Referencias}{8}

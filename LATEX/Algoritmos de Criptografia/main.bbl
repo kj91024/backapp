@@ -1,0 +1,86 @@
+\begin{thebibliography}{10}
+
+\bibitem{Papa05}
+CASLAV BRUKNER.
+\newblock {\em Quantum Entanglement: Information-theoretical Foundations,
+  Bell’s Theorems and Quantum Communication Complexity}.
+\newblock PhD thesis, Universität Wien, 2002.
+
+\bibitem{Papa04}
+JESUS~NAVERRO FAUS.
+\newblock {\em HEISENBERG-¿Existe el Mundo cuando no lo Miras?}
+\newblock PhD thesis, Instituto de Fisica Corpuscular-Universidad de Valencia,
+  2010.
+
+\bibitem{Papa02}
+ALBERTO T.~PEREZ I.
+\newblock {\em MAX PLANCK-La Revolucion de lo muy Pequeño}.
+\newblock PhD thesis, Universidad de Sevilla, 2012.
+
+\bibitem{Papa01}
+RAFAEL LAHOZ-BELTRA.
+\newblock {\em TURING-Pensando en Maquinas que Piensan}.
+\newblock PhD thesis, Universidad Complutence de Madrid, 2012.
+
+\bibitem{i}
+Vicente Martín.
+\newblock Criptografía cuántica aplicada.
+\newblock {\em Criptografía Cuántica Aplicada}, 2007.
+
+\bibitem{j}
+Jesús~Martínez Mateo.
+\newblock Criptografía cuántica aplicada.
+\newblock {\em Criptografía Cuántica Aplicada}, 2008.
+
+\bibitem{Papa06}
+HERNAN~ORTIZ ROJAS.
+\newblock {\em Fundamentos de Criptografia Cuantica}.
+\newblock PhD thesis, UNIVERSIDAD EAFIT, 2007.
+
+\bibitem{Papa03}
+MIGUEL~A. SABADELI.
+\newblock {\em FEYNMAN-Cuando un Foton conoce un Electron}.
+\newblock PhD thesis, INTA-CSIC, 2012.
+
+\bibitem{Papa09}
+MATTHIAS SCHOLZ.
+\newblock {\em Quantum Key Distribution via BB84 An Advanced Lab Experiment}.
+\newblock PhD thesis, U---, 2007.
+
+\bibitem{b}
+William Stallings.
+\newblock Cryptography and network security.
+\newblock {\em Cryptography and Network Security}, 4to Edicion:134--165, 2005.
+
+\bibitem{a}
+William Stallings.
+\newblock Cryptography and network security: Principles and practice.
+\newblock {\em Advanced Encryption Standar}, 5to Edicion:147--191, 2005.
+
+\bibitem{c}
+Alfred J.Menezes Paul C.van Oorschot Scott~A. Vanstone.
+\newblock Handbook of applied cryptography.
+\newblock {\em Introduction, Information security and cryptography}, 4to
+  Edicion:1--2, 1996.
+
+\bibitem{d}
+Alfred J.Menezes Paul C.van Oorschot Scott~A. Vanstone.
+\newblock Handbook of applied cryptography.
+\newblock {\em Basic terminology and concepts}, 4to Edicion:11--15, 1996.
+
+\bibitem{e}
+Alfred J.Menezes Paul C.van Oorschot Scott~A. Vanstone.
+\newblock Handbook of applied cryptography.
+\newblock {\em Symmetric-key encryption}, 4to Edicion:15--21, 1996.
+
+\bibitem{f}
+Alfred J.Menezes Paul C.van Oorschot Scott~A. Vanstone.
+\newblock Handbook of applied cryptography.
+\newblock {\em Public-key cryptography}, 4to Edicion:25--31, 1996.
+
+\bibitem{h}
+Alfred J.Menezes Paul C.van Oorschot Scott~A. Vanstone.
+\newblock Handbook of applied cryptography.
+\newblock {\em DES}, 4to Edicion:250--256, 1996.
+
+\end{thebibliography}

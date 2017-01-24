@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: plain.bst
+Illegal, another \bibdata command---line 57 of file main.aux
+ : \bibdata
+ :         {b.bib}
+I'm skipping whatever remains of this command
+Database file #1: biblio.bib.bib
+Warning--empty year in a
+You've used 8 entries,
+            2118 wiz_defined-function locations,
+            535 strings with 4787 characters,
+and the built_in function-call counts, 1953 in all, are:
+= -- 195
+> -- 56
+< -- 1
++ -- 24
+- -- 16
+* -- 98
+:= -- 352
+add.period$ -- 24
+call.type$ -- 8
+change.case$ -- 32
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 90
+empty$ -- 167
+format.name$ -- 16
+if$ -- 407
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 8
+newline$ -- 43
+num.names$ -- 16
+pop$ -- 26
+preamble$ -- 1
+purify$ -- 24
+quote$ -- 0
+skip$ -- 66
+stack$ -- 0
+substring$ -- 102
+swap$ -- 15
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 32
+warning$ -- 1
+while$ -- 20
+width$ -- 9
+write$ -- 86
+(There was 1 error message)

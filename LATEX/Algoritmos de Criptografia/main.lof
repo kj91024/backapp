@@ -1,0 +1,32 @@
+\select@language {spanish}
+\contentsline {figure}{\numberline {1}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica de Transposici\IeC {\'o}n}}{3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica de Sustituci\IeC {\'o}n}}{3}
+\contentsline {figure}{\numberline {3}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica de la criptograf\IeC {\'\i }a Sim\IeC {\'e}trica}}{3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica de la criptograf\IeC {\'\i }a asim\IeC {\'e}trica}}{4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Representacion de Cesar}}{6}
+\contentsline {figure}{\numberline {6}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica de Esc\IeC {\'\i }tala}}{6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Cuadro de Vigenere}}{7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Cuadro de Vernam}}{7}
+\contentsline {figure}{\numberline {9}{\ignorespaces Representacion de Polybios}}{7}
+\contentsline {figure}{\numberline {10}{\ignorespaces La estructura general de Feistel en DES}}{8}
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de Blowfish}}{9}
+\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de Blowfish a nivel de bits}}{10}
+\contentsline {figure}{\numberline {13}{\ignorespaces Funcionamiento del sistema Diffie-Hellman}}{12}
+\contentsline {figure}{\numberline {14}{\ignorespaces Esquema de la intrusi\IeC {\'o}n Man-in-the-middle}}{12}
+\contentsline {figure}{\numberline {15}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica de del SHA B\IeC {\'a}sico}}{15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica de del SHA-2}}{15}
+\contentsline {figure}{\numberline {17}{\ignorespaces La construcci\IeC {\'o}n de la esponja para el hash.}}{15}
+\contentsline {figure}{\numberline {18}{\ignorespaces Polarizacion de fotones en el protocolo BB84.}}{16}
+\contentsline {figure}{\numberline {19}{\ignorespaces Alice codifica bits como fotones polarizados}}{16}
+\contentsline {figure}{\numberline {20}{\ignorespaces Bob decodifica fotones polarizados como bits}}{16}
+\contentsline {figure}{\numberline {21}{\ignorespaces Cristal de Calcita que separa fotones.}}{16}
+\contentsline {figure}{\numberline {22}{\ignorespaces Alicia y Bob comparan un subgrupo de bits}}{17}
+\contentsline {figure}{\numberline {23}{\ignorespaces Clave Generada}}{17}
+\contentsline {figure}{\numberline {24}{\ignorespaces Codificaci\IeC {\'o}n de los bits de Alicia}}{17}
+\contentsline {figure}{\numberline {25}{\ignorespaces Intercepci\IeC {\'o}n y medici\IeC {\'o}n de Eva}}{17}
+\contentsline {figure}{\numberline {26}{\ignorespaces Bob realiza mediciones}}{17}
+\contentsline {figure}{\numberline {27}{\ignorespaces Detectan la presencia de Eva}}{17}
+\contentsline {figure}{\numberline {28}{\ignorespaces Gr\IeC {\'a}fico de la encriptacion y desencriptacion con AES}}{18}
+\contentsline {figure}{\numberline {29}{\ignorespaces ShiftRows haciendo una que las filas se desplacen.}}{18}
+\contentsline {figure}{\numberline {30}{\ignorespaces MixColumns haciendo una Multiplicacion de columnas.}}{18}
+\contentsline {figure}{\numberline {31}{\ignorespaces Ejemplo de AddRoundKey}}{18}

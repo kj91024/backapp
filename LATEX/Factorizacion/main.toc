@@ -1,0 +1,50 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {I}Introducci\IeC {\'o}n}{2}
+\contentsline {section}{\numberline {II}RSA}{2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}El RSA}{2}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-A}1}Pseudo-Algoritmo para la generaci\IeC {\'o}n de Claves}{3}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-A}2}Pseudo-Algoritmo para la encriptaci\IeC {\'o}n y desencriptaci\IeC {\'o}n}{3}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Seguridad de RSA}{3}
+\contentsline {section}{\numberline {III}Algoritmos de Factorizaci\IeC {\'o}n}{4}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}M\IeC {\'e}todo de Fermat}{4}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-A}1}Conceptos te\IeC {\'o}ricos y matem\IeC {\'a}ticos}{4}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-A}2}Descripci\IeC {\'o}n del Pseudo-Algoritmo}{4}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-A}3}Ejemplo y seguimiento}{4}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-A}4}Tiempo de Ejecuci\IeC {\'o}n}{5}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Mejora de Kraitchik}{5}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}1}Conceptos te\IeC {\'o}ricos y matem\IeC {\'a}ticos}{5}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}2}Ejemplo y seguimiento}{5}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Algoritmo Pollard (p-1)}{6}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}1}Conceptos te\IeC {\'o}ricos y matem\IeC {\'a}ticos}{6}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}2}Descripci\IeC {\'o}n del Pseudo-Algoritmo}{7}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}3}Ejemplo y seguimiento}{7}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}4}Tiempo de Ejecuci\IeC {\'o}n}{7}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Algoritmo Rho Pollard}{8}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}1}Conceptos te\IeC {\'o}ricos y matem\IeC {\'a}ticos}{8}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}2}Descripci\IeC {\'o}n del Pseudo-Algoritmo}{8}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}3}Ejemplo y seguimiento}{8}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}4}Tiempo de Ejecuci\IeC {\'o}n}{9}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-E}}Algoritmo de fracciones continuas}{9}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-E}1}Conceptos te\IeC {\'o}ricos y matem\IeC {\'a}ticos}{9}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-E}2}Descripci\IeC {\'o}n del Pseudo-Algoritmo}{10}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-E}3}Ejemplo y seguimiento}{10}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-E}4}Tiempo de Ejecuci\IeC {\'o}n}{10}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-F}}M\IeC {\'e}todo de Dixon}{11}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-F}1}Conceptos te\IeC {\'o}ricos y matem\IeC {\'a}ticos}{11}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-F}2}Descripci\IeC {\'o}n del Pseudo-Algoritmo}{11}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-F}3}Ejemplo y seguimiento}{12}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-F}4}Tiempo de Ejecuci\IeC {\'o}n}{13}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-G}}Criba cuadr\IeC {\'a}tica}{13}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-G}1}Conceptos te\IeC {\'o}ricos y matem\IeC {\'a}ticos}{13}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-G}2}Descripci\IeC {\'o}n del Pseudo-Algoritmo}{14}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-G}3}Ejemplo y seguimiento}{14}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-H}}Criba General de campos num\IeC {\'e}ricos}{16}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-H}1}Conceptos te\IeC {\'o}ricos y matem\IeC {\'a}ticos}{17}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-H}2}Descripci\IeC {\'o}n del Pseudo-Algoritmo}{18}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-H}3}Tiempo de Ejecuci\IeC {\'o}n}{18}
+\contentsline {section}{\numberline {IV}Comparaci\IeC {\'o}n de Algoritmos}{19}
+\contentsline {section}{\numberline {V}Conclusi\IeC {\'o}n}{20}
+\contentsline {section}{Referencias}{20}
+\contentsline {section}{\numberline {VI}Anexos}{21}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}Implementaci\IeC {\'o}n del RSA}{21}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Implementaci\IeC {\'o}n del Rompimiento del RSA}{24}

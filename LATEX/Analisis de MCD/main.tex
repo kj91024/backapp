@@ -1,0 +1,241 @@
+\documentclass[11pt, conference]{IEEEtran}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{cite}
+\usepackage{graphicx}
+
+\begin{document}
+	\title{\bf Análisis de MCD y MCD Binario}
+	\author{Kevin Jhomar Sanchez Sanchez}
+
+\maketitle
+
+\section{Algoritmo de MCD}
+\subsection{Código}
+$1.\ ZZ\ euclides(ZZ\  a,\  ZZ\  b)\{\\
+2.\qquad ZZ\  r,\  d;\\
+3.\qquad r\  =\  rsta\  =\  1;\\
+4.\qquad while(r\  >\  0)\{\\
+5.\qquad\qquad  d\  =\  r;\\
+6.\qquad\qquad  r\  =\  mod(a,b);\\
+7.\qquad\qquad  a\  =\  b;\\
+8.\qquad\qquad  b\  =\  r;\\
+9.\qquad \}\\
+10.\qquad return\  d;\\
+11.\ \}$
+\
+\subsection{Análisis}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Bits}& {\bf Tiempo} (ms) & {\bf Vueltas} \\	\hline
+		$2^{10}$ & 0.111 & 10\\ \hline
+		$2^{50}$ & 0.181 & 35 \\ \hline
+		$2^{100}$ & 0.229 & 63 \\ \hline
+		$2^{200}$ & 0.480 & 124 \\ \hline
+		$2^{400}$ & 0.668 & 232 \\ \hline
+		$2^{600}$ & 1.147 & 297 \\ \hline
+		$2^{800}$ & 1.321 & 461 \\ \hline
+		$2^{1023}$ & 1.542 & 465 \\ \hline
+	\end{tabular}
+\end{center}
+\textbf{NOTA:} No se han aplicado ningunas de las propiedades.
+
+\subsection{Seguimiento del algoritmo}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	 & \textbf{a}& \textbf{b} & \textbf{r} & \textbf{d} \\	\hline
+	Inicio & 1827 & 1024 & 1 & 1\\ \hline
+	1 & 1024 & 803 & 803 & 803\\ \hline
+	2 & 803 & 221 & 221 & 221\\ \hline
+	3 & 221 & 140 & 140 & 140\\ \hline
+	4 & 140 & 81 & 81 & 91\\ \hline
+	\vdots & \vdots & \vdots & \vdots & \vdots\\ \hline
+	9 & 15 & 7 & 7 & 7\\ \hline
+	10 & 7 & 1 & 1 & 1\\ \hline
+\end{tabular}
+\end{center}
+Donde:\\
+$
+	a\ :\ Entrada \\
+	b\ :\ Entrada \\
+	r\ :\ Residuo \\
+	d\ :\ Es\ el\ MCD \\
+$
+\section{Algoritmo de MCD Binario}
+\subsection{Código}
+
+\
+$
+1.ZZ\ euclides\_binary(ZZ\ a,\ ZZ\ b)\{\\
+2.\qquad int\ i\ =\ 0,\ c\ =\ 0,\ d\ =\ 0;\\
+3.\qquad while(a\ !=\ b)\{\\
+4.\qquad\qquad if(\ (a\ \&\ 1)\ ==\ 0\ \&\&\ (b\ \&\ 1)\ ==\ 0\ )\{\\
+5.\qquad\qquad a\ =\ a\ >>\ 1;\\
+6.\qquad\qquad b\ =\ b\ >>\ 1;\\
+7.\qquad\qquad i++;\\
+8.\qquad\qquad \}else\ if(\ (a\ \&\ 1)==0\ \&\&\ (b\ \&\ 1)==1)\{\\
+9.\qquad\qquad\qquad a\ =\ a\ >>\ 1;\\
+10.\qquad\qquad \}else\ if(\ (a \& 1)==1\ \&\&\ (b\ \&\ 1)==0)\{\\
+11.\qquad\qquad\qquad b\ =\ b\ >>\ 1;\\	
+12.\qquad\qquad \}else\{\\
+13.\qquad\qquad\qquad if(a\ >\ b)\\
+14.\qquad\qquad\qquad\qquad a\ =\ a-b;\\
+15.\qquad\qquad\qquad else\\
+16.\qquad\qquad\qquad\qquad b\ =\ b-a;\\
+17.\qquad\qquad\}\\
+18.\qquad d\ =\ a\ <<\ i;\\
+19.\qquad return\ d;\\
+20.\}
+$
+
+\
+\subsection{Análisis}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Bits}& {\bf Tiempo} (ms) & {\bf Vueltas} \\	\hline
+		$2^{10}$ & 0.197 & 25\\ \hline
+		$2^{50}$ & 0.719 & 105 \\ \hline
+		$2^{100}$ & 1.265 & 222 \\ \hline
+		$2^{200}$ & 7.480 & 416 \\ \hline
+		$2^{400}$ & 21.166 & 848 \\ \hline
+		$2^{600}$ & 42.771 & 1241 \\ \hline
+		$2^{800}$ & 53.361 & 1640 \\ \hline
+		$2^{1023}$ & 67.213 & 2135 \\ \hline
+	\end{tabular}
+\end{center}
+
+\
+
+\textbf{NOTA:} Se han aplicado las propiedades binarias.
+\begin{itemize}
+	\item Cuando 'a' y 'b' son pares. \\
+		  $2*MCD(a/2,b/2)$
+	\item Cunado 'a' es par y 'b' es impar o viceversa. \\
+		  $MCD(a/2,b)$
+	\item Cuando 'a' y 'b' son impares o viceversa. \\
+		  $MCD(a-b,b)$
+\end{itemize}
+
+\pagebreak
+
+\subsection{Seguimiento del algoritmo}
+
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		& \textbf{a}& \textbf{b} & \textbf{d} & \textbf{Propiedad}\\	\hline
+		Inicio & 1827 & 1024 & 0 & \ldots\\ \hline
+		1 & 1827 & 512 & 0 & P2\\ \hline
+		2 & 1827 & 256 & 0 & P2\\ \hline
+		3 & 1827 & 128 & 0 & P2\\ \hline
+		4 & 1827 & 64  & 0 & P2\\ \hline
+		5 & 1827 & 32 & 0 & P2\\ \hline
+		6 & 1827 & 16 & 0 & P2\\ \hline
+		7 & 1827 & 8 & 0 & P2\\ \hline
+		8 & 1827 & 4  & 0 & P2\\ \hline
+		9 & 1827 & 2 & 0 & P2\\ \hline
+		10 & 1827 & 1 & 0 & P2\\ \hline
+		11 & 913 & 1 & 0 & P2\\ \hline
+		12 & 912 & 1  & 0 &  P3\\ \hline
+		\vdots & \vdots & \vdots& \vdots & \vdots\\ \hline
+		25 & 2 & 1 & 0& P2\\ \hline
+		26 & 1 & 1 & 1& \ldots\\ \hline
+	\end{tabular}
+\end{center}
+Donde:\\
+$
+a\ :\ Entrada \\
+b\ :\ Entrada \\	
+d\ :\ Es\ el\ MCD\\	
+P2\ :\ Propiedad\ Dos\\
+P3\ :\ Propiedad\ Tres\\
+$
+\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip
+\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip
+\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip
+
+\section{Algoritmo de Euclides Extendido}
+\subsection{Código}
+
+\
+$
+1.\ ZZ\ euclides\_extended(ZZ\ a, ZZ\ b)\{\\
+2.\qquad ZZ\ r,\ d,\ q,\ x,\ y;\\
+3.\qquad x\ =\ y =\ r\ =\ d\ =\ 0;\\
+4.\qquad if(a\ !=\ 0\ \&\ b\ ==\ 0)\{\\
+5.\qquad\qquad x\ =\ 1;y\ =\ 0;d\ =\ a;\\
+6.\qquad \}else\ if(a\ ==\ 0 \& b\ !=\ 0)\{\\
+7.\qquad\qquad x\ =\ 0;y\ =\ 1;d\ =\ b;\\
+8.\qquad\}else\{\\
+9.\qquad\qquad ZZ\ x1\ =\ (ZZ)0,\ x2\ =\ (ZZ)1,\\ 
+10.\qquad\qquad\ \ \ \ y1\ =\ (ZZ)1,\ y2\ =\ (ZZ)0;\\
+10.\qquad\qquad while(b\ >\ 0)\{\\
+11.\qquad\qquad\qquad q\ =\ a/b;\\
+12.\qquad\qquad\qquad r\ =\ a\ -\ q*b;\\
+13.\qquad\qquad\qquad x\ =\ x2\ -\ q*x1;\\
+14.\qquad\qquad\qquad y\ =\ y2\ -\ q*y1;\\
+15.\qquad\qquad\qquad a\ =\ b;\\
+16.\qquad\qquad\qquad b\ =\ r;\\
+17.\qquad\qquad\qquad x2\ =\ x1;\\
+18.\qquad\qquad\qquad x1\ =\ x;\\
+19.\qquad\qquad\qquad y2\ =\ y1;\\
+20.\qquad\qquad\qquad y1\ =\ y;\\
+21.\qquad\qquad\}\\
+22.\qquad\qquad d\ =\ a;\\
+23.\qquad\qquad x\ =\ x2;\\
+24.\qquad\qquad y\ =\ y2;\\
+25.\qquad \}\\
+26.\qquad cout\ <<\ x\ <<"\ "<<\ y\ <<\ endl;\\
+27.\qquad return\ d;\\
+28.\}
+$
+\subsection{Análisis}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Bits}& {\bf Tiempo} (ms) & {\bf Vueltas} \\	\hline
+		$2^{10}$ & 0.152 & 10\\ \hline
+		$2^{50}$ & 0.278 & 35 \\ \hline
+		$2^{100}$ & 0.406 & 63 \\ \hline
+		$2^{200}$ & 1.003 & 124 \\ \hline
+		$2^{400}$ & 1.260 & 232 \\ \hline
+		$2^{600}$ & 0.810 & 297 \\ \hline
+		$2^{800}$ & 1.957 & 461 \\ \hline
+		$2^{1023}$ & 1.576 & 465 \\ \hline
+	\end{tabular}
+\end{center}
+
+\subsection{Seguimiento del algoritmo}
+
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\hline
+		   & \textbf{q} & \textbf{x} & \textbf{y} & \textbf{x1} & \textbf{x2}& \textbf{y1}& \textbf{y2} \\	\hline
+		Inicio &  0 & 0 & 0 & 0 & 1 & 1 & 0\\ \hline
+		1 & 1024 & 1 & -1 & 1 & 0 & -1 & 1\\ \hline
+		2 & 803  & -1 & 2 & -1 & 1 & 2 & -1\\ \hline
+		3 & 221  & 4 & -7 & 4 & -1 & -7 & 2\\ \hline
+		4 & 140  & -5 & 9 & -5 & 4 & 9 & -7\\ \hline
+		\vdots  & \vdots & \vdots & \vdots& \vdots& \vdots& \vdots& \vdots \\ \hline
+		9 & 15  & -51 & 91 & -51 & 37 & 91 & -66\\ \hline
+		10& 7  & 139 & -248 & 139 & -51 & -248 & 91\\ \hline
+	\end{tabular}
+\end{center}
+Donde:\\
+$
+q\ :\ Cociente \\
+x\ :\ Residuo \\
+y\ :\ Residuo \\
+x1\ :\ Dividendo \qquad x2\ :\ Divisor \\
+y1\ :\ Dividendo \qquad y2\ :\ Divisor \\
+$
+
+\section{Conclusión}
+El análisis realizado me a dejado muy desconcertado porque a primera vista pareciera que el euclides binario sería muy rápido pero los resultamos me mustran pero no, es mucho más lento y con un costo mucho más alto de lo que se suponía que debería ser, quizá mi código esta mal. Esto significa que el mejor código para realizar el MCD es el básico.
+\end{document}

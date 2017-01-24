@@ -1,0 +1,13 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {I}Introducci\IeC {\'o}n}{1}
+\contentsline {section}{\numberline {II}VLIW}{1}
+\contentsline {section}{\numberline {III}EPIC (Intel IA-64)}{2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Registros}{3}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-A}1}Instrucciones}{3}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}T\IeC {\'e}cnicas y Conceptos innovadores}{4}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}1}Paralelismo Expl\IeC {\'\i }cito}{4}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}2}Predicaci\IeC {\'o}n}{4}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}3}Especulaci\IeC {\'o}n}{4}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}\IeC {\textquestiondown }Qu\IeC {\'e} aplicaciones se benefician de las arquitecturas de 64 bits?}{4}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Desventajas de EPIC}{4}
+\contentsline {section}{\numberline {IV}Conclusi\IeC {\'o}n}{4}

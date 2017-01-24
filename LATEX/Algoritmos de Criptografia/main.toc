@@ -1,0 +1,60 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {I}Introducci\IeC {\'o}n}{1}
+\contentsline {section}{\numberline {II}\IeC {\textquestiondown }Qu\IeC {\'e} es la criptograf\IeC {\'\i }a?}{3}
+\contentsline {section}{\numberline {III}Clases Criptograf\IeC {\'\i }a}{3}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Transposici\IeC {\'o}n}{3}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Sustituci\IeC {\'o}n}{3}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Sim\IeC {\'e}trica}{3}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}1}Cifrados de flujo}{4}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}2}Cifrados de Bloque}{4}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Asim\IeC {\'e}trica}{4}
+\contentsline {section}{\numberline {IV}Limitaciones de la Criptograf\IeC {\'\i }a}{4}
+\contentsline {section}{\numberline {V}Resumen Hist\IeC {\'o}rico}{4}
+\contentsline {section}{\numberline {VI}Criptograf\IeC {\'\i }a Cl\IeC {\'a}sica}{5}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}Concepto}{5}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Algoritmos}{6}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}1}Transposici\IeC {\'o}n Inversa}{6}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}2}Transposici\IeC {\'o}n Simple}{6}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}3}Cesar}{6}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}4}Esc\IeC {\'\i }tala}{6}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}5}Vigenere}{6}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}6}Vernam}{6}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}7}Polybios}{7}
+\contentsline {section}{\numberline {VII}Criptograf\IeC {\'\i }a Moderna}{7}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}}Concepto}{7}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}}Algoritmos}{7}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}1}DES}{7}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}2}Triple DES}{8}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}3}MD5}{8}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}4}Blowfish}{9}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}5}RSA}{10}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}6}DSA}{10}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}7}ElGamal}{11}
+\contentsline {section}{\numberline {VIII}Profundizando en un tema}{12}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-A}}\bf Diffie-Hellman}{12}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-A}1}Concepto}{12}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-A}2}Funcionamiento}{12}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-A}3}Seguridad}{12}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-B}}\bf RC4}{12}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-B}1}Concepto}{12}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-B}2}Cifrado}{13}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-B}3}Ejemplo de RC4}{13}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-B}4}Seguridad de RC4}{13}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-B}5}Ventajas}{14}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-C}}\bf Secure Hash Algorithm (SHA)}{14}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-C}1}Concepto}{14}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-C}2}Funciones Hash}{14}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-C}3}SHA-0 y SHA-1}{14}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-C}4}SHA-2}{15}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-C}5}SHA-3}{15}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-D}}\bf Criptograf\IeC {\'\i }a Cu\IeC {\'a}ntica}{16}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-D}1}Concepto}{16}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-D}2}Mec\IeC {\'a}nica Cu\IeC {\'a}ntica en Criptograf\IeC {\'\i }a}{16}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-D}3}Distribucion de Claves Cuanticas}{16}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-D}4}Protocolo BB84}{16}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-E}}\bf Advanced Encryption Standard (AES)}{17}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-E}1}Concepto}{17}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-E}2}Proceso de creaci\IeC {\'o}n del AES}{18}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-E}3}Seguridad}{19}
+\contentsline {section}{\numberline {IX}Conclusi\IeC {\'o}n}{19}
+\contentsline {section}{Referencias}{20}
